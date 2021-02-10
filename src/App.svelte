@@ -1,9 +1,12 @@
 <script>
   import Map from "./Map.svelte";
+  import Datatable from "./Datatable.svelte";
 </script>
 
-<main>
+<main class="container">
   <Map />
+  <hr />
+  <Datatable />
 </main>
 
 <svelte:head>
@@ -14,3 +17,12 @@
     crossorigin=""
   />
 </svelte:head>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
